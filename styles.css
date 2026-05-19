@@ -182,10 +182,10 @@ ul { list-style:none; }
 }
 
 .hero-name {
-  font-size:clamp(2.8rem,8vw,6rem);
+  font-size:clamp(1.8rem,5.8vw,5rem);
   font-weight:900; line-height:1.05;
   letter-spacing:-0.04em; margin-bottom:22px;
-  max-width:800px;
+  white-space:nowrap;
 }
 
 .hero-subtitle {
