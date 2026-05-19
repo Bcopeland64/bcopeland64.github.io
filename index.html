@@ -42,6 +42,7 @@
   <!-- ===================== HERO ===================== -->
   <section id="home" class="hero">
     <canvas id="neural-canvas"></canvas>
+    <div class="hero-grid"></div>
     <div class="hero-glow"></div>
     <div class="hero-content">
       <div class="hero-badge">
@@ -49,8 +50,7 @@
         Available for new opportunities
       </div>
       <h1 class="hero-name">
-        Brandon S.<br>
-        <span class="gradient-text">Copeland</span>
+        Brandon S. <span class="gradient-text">Copeland</span>
       </h1>
       <div class="hero-subtitle">
         <span class="subtitle-dim">I build </span>
@@ -576,6 +576,34 @@
       <p class="footer-sub">AI Engineer &amp; Machine Learning Specialist</p>
     </div>
   </footer>
+
+  <!-- ===================== CHAT WIDGET ===================== -->
+  <div id="chat-widget">
+    <div id="chat-panel" class="chat-panel chat-hidden">
+      <div class="chat-head">
+        <div class="chat-head-left">
+          <div class="chat-avatar"><i class="fas fa-robot"></i></div>
+          <div>
+            <div class="chat-name">AI Brandon</div>
+            <div class="chat-status"><span class="chat-dot"></span> Online</div>
+          </div>
+        </div>
+        <button id="chat-close" class="chat-close-btn" aria-label="Close chat">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <iframe
+        src="https://www.chatbase.co/chatbot-iframe/qHCsRmf9XgkF4dbtRw2-5"
+        width="100%"
+        height="100%"
+        frameborder="0"
+        title="Chat with AI Brandon"
+      ></iframe>
+    </div>
+    <button id="chat-fab" class="chat-fab" aria-label="Chat with AI Brandon">
+      <i class="fas fa-comment-dots" id="chat-fab-icon"></i>
+    </button>
+  </div>
 
   <script src="script.js"></script>
 </body>

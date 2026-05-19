@@ -1,4 +1,28 @@
 /* ============================================================
+   CHAT WIDGET
+============================================================ */
+const chatFab   = document.getElementById('chat-fab');
+const chatPanel = document.getElementById('chat-panel');
+const chatClose = document.getElementById('chat-close');
+const chatIcon  = document.getElementById('chat-fab-icon');
+
+function openChat() {
+  chatPanel.classList.remove('chat-hidden');
+  chatFab.classList.add('active');
+  chatIcon.className = 'fas fa-times';
+}
+function closeChat() {
+  chatPanel.classList.add('chat-hidden');
+  chatFab.classList.remove('active');
+  chatIcon.className = 'fas fa-comment-dots';
+}
+
+chatFab.addEventListener('click', () =>
+  chatPanel.classList.contains('chat-hidden') ? openChat() : closeChat()
+);
+chatClose.addEventListener('click', closeChat);
+
+/* ============================================================
    NEURAL NETWORK CANVAS ANIMATION
 ============================================================ */
 const canvas = document.getElementById('neural-canvas');
