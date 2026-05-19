@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brandon S. Copeland — AI Engineer & Machine Learning Specialist with 3+ years building enterprise-scale AI on AWS.">
+  <meta name="author" content="Brandon S. Copeland">
+  <title>Brandon S. Copeland | AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="bracket">&lt;</span>BSC<span class="bracket">/&gt;</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects"   class="nav-link">Projects</a></li>
+        <li><a href="#education"  class="nav-link">Education</a></li>
+        <li><a href="#contact"    class="nav-link">Contact</a></li>
+        <li>
+          <a href="Brandon_Copeland_Resume.pdf" target="_blank" class="nav-cta">
+            Resume <i class="fas fa-download"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="home" class="hero">
+    <canvas id="neural-canvas"></canvas>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for new opportunities
+      </div>
+      <h1 class="hero-name">
+        Brandon S.<br>
+        <span class="gradient-text">Copeland</span>
+      </h1>
+      <div class="hero-subtitle">
+        <span class="subtitle-dim">I build </span>
+        <span id="typewriter"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-bio">
+        AI Engineer &amp; Machine Learning Specialist with 3+ years designing enterprise-scale AI solutions.
+        Specializing in NLP, computer vision, and foundation models on AWS cloud infrastructure.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+        <a href="#contact"  class="btn btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/bcopeland64"           target="_blank" rel="noopener" class="social-btn" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/brandon-copeland64" target="_blank" rel="noopener" class="social-btn" title="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:bcopeland64@gmail.com" class="social-btn" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm an AI Engineer passionate about building intelligent systems that solve real-world problems at scale.
+            With 3+ years of hands-on experience deploying production-ready ML applications on AWS, I work at the
+            intersection of NLP, computer vision, and cloud-native architecture.
+          </p>
+          <p>
+            My portfolio spans multi-intent conversational platforms, medical imaging analysis, fake news detection,
+            and therapeutic AI — all shipped to production. I've led teams of engineers, managed 7+ AI/ML projects
+            end-to-end, and built community around AI for 100+ practitioners across the Middle East.
+          </p>
+          <p>
+            I also bring a rare dual background as an educator, currently leading AI &amp; Data Science bootcamps
+            at Istidama Consulting — teaching the full ML lifecycle from raw data to deployed product.
+          </p>
+          <div class="about-chips">
+            <span class="chip">🤖 AI Engineering</span>
+            <span class="chip">☁️ AWS Cloud</span>
+            <span class="chip">🧠 NLP &amp; LLMs</span>
+            <span class="chip">👁️ Computer Vision</span>
+            <span class="chip">🎓 Educator</span>
+            <span class="chip">🌍 Community Leader</span>
+          </div>
+        </div>
+        <div class="stats-grid reveal">
+          <div class="stat-card">
+            <div class="stat-num" data-target="3" data-suffix="+">3+</div>
+            <div class="stat-lbl">Years Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" data-target="5" data-suffix="+">5+</div>
+            <div class="stat-lbl">Production AI Apps</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" data-target="100" data-suffix="+">100+</div>
+            <div class="stat-lbl">Practitioners Led</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" data-target="7" data-suffix="+">7+</div>
+            <div class="stat-lbl">ML Projects Managed</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">What I Know</span>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-icon cyan"><i class="fas fa-brain"></i></div>
+            <h3>Machine Learning &amp; AI</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="stag cyan">TensorFlow</span>
+            <span class="stag cyan">PyTorch</span>
+            <span class="stag cyan">Keras</span>
+            <span class="stag cyan">Scikit-learn</span>
+            <span class="stag cyan">BERT</span>
+            <span class="stag cyan">Transformers</span>
+            <span class="stag cyan">NLP</span>
+            <span class="stag cyan">Computer Vision</span>
+            <span class="stag cyan">Foundation Models</span>
+            <span class="stag cyan">Transfer Learning</span>
+            <span class="stag cyan">Fine-tuning</span>
+            <span class="stag cyan">Predictive Analytics</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-icon purple"><i class="fab fa-aws"></i></div>
+            <h3>Cloud &amp; Infrastructure</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="stag purple">AWS SageMaker</span>
+            <span class="stag purple">AWS Bedrock</span>
+            <span class="stag purple">AWS Lambda</span>
+            <span class="stag purple">ECS / Fargate</span>
+            <span class="stag purple">EC2 &amp; S3</span>
+            <span class="stag purple">Lex &amp; Comprehend</span>
+            <span class="stag purple">Docker</span>
+            <span class="stag purple">Kubernetes</span>
+            <span class="stag purple">CI/CD Pipelines</span>
+            <span class="stag purple">Terraform</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-icon pink"><i class="fas fa-database"></i></div>
+            <h3>Data Engineering</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="stag pink">Python</span>
+            <span class="stag pink">SQL</span>
+            <span class="stag pink">Pandas</span>
+            <span class="stag pink">NumPy</span>
+            <span class="stag pink">PySpark</span>
+            <span class="stag pink">ETL / ELT</span>
+            <span class="stag pink">PostgreSQL</span>
+            <span class="stag pink">DynamoDB</span>
+            <span class="stag pink">ElasticSearch</span>
+            <span class="stag pink">Weaviate</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-icon green"><i class="fas fa-code"></i></div>
+            <h3>Dev &amp; Monitoring</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="stag green">Git &amp; GitHub Actions</span>
+            <span class="stag green">MLFlow</span>
+            <span class="stag green">Prefect</span>
+            <span class="stag green">Prometheus</span>
+            <span class="stag green">Grafana</span>
+            <span class="stag green">FastAPI</span>
+            <span class="stag green">Power BI</span>
+            <span class="stag green">Matplotlib</span>
+            <span class="stag green">Seaborn</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Where I've Worked</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div>
+                <h3 class="tl-role">Lead Instructor</h3>
+                <div class="tl-company">
+                  <i class="fas fa-building"></i> Istidama Consulting
+                  <span class="tl-loc"><i class="fas fa-map-marker-alt"></i> Amman, Jordan</span>
+                </div>
+              </div>
+              <span class="tl-date">Mar 2026 – Present</span>
+            </div>
+            <ul class="tl-list">
+              <li>Lead intensive AI &amp; Data Science bootcamp covering the full ML lifecycle — data engineering to production deployment.</li>
+              <li>Instruct on advanced NLP &amp; LLM architectures: Transformer fine-tuning (BERT, RoBERTa, GPT), RAG pipelines with Weaviate vector databases, and dense vs. sparse retrieval methods.</li>
+              <li>Guide students through MLOps best practices — Docker containerization, FastAPI backends, Git branching, and automated evaluation monitoring.</li>
+              <li>Mentor cross-functional teams on full-stack AI applications with Next.js frontends.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div>
+                <h3 class="tl-role">AI Engineer &amp; Team Lead</h3>
+                <div class="tl-company">
+                  <i class="fas fa-building"></i> HubinIT
+                  <span class="tl-loc"><i class="fas fa-globe"></i> Remote</span>
+                </div>
+              </div>
+              <span class="tl-date">Jul 2024 – May 2025</span>
+            </div>
+            <ul class="tl-list">
+              <li>Architected multi-layered AI Employee platform using AWS Fargate, Bedrock, and Comprehend across 5 business modules (financial forecasting, legal compliance, sales, customer service, ethics).</li>
+              <li>Implemented knowledge retrieval systems using Kendra, OpenSearch, and DynamoDB for context-aware business workflow automation.</li>
+              <li>Designed serverless microservices with IAM role-based access controls and secure data encryption.</li>
+              <li>Directed 7 AI engineering interns, establishing code review processes that improved development velocity by 20%.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div>
+                <h3 class="tl-role">Business English Instructor</h3>
+                <div class="tl-company">
+                  <i class="fas fa-building"></i> YGA Upskilling Program
+                  <span class="tl-loc"><i class="fas fa-map-marker-alt"></i> Amman, Jordan</span>
+                </div>
+              </div>
+              <span class="tl-date">Oct 2025 – Mar 2026</span>
+            </div>
+            <ul class="tl-list">
+              <li>Designed specialized ESP curriculum for QA testers and Generative AI students, focusing on technical documentation and agile communication.</li>
+              <li>Facilitated workshops on professional readiness — bug reporting, prompt engineering articulation, and stakeholder presentations.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div>
+                <h3 class="tl-role">English Instructor</h3>
+                <div class="tl-company">
+                  <i class="fas fa-building"></i> Amideast Jordan
+                  <span class="tl-loc"><i class="fas fa-map-marker-alt"></i> Amman, Jordan</span>
+                </div>
+              </div>
+              <span class="tl-date">Oct 2024 – Present</span>
+            </div>
+            <ul class="tl-list">
+              <li>Crafted specialized business English curriculum for tech industry professionals focused on technical communication.</li>
+              <li>Implemented data-driven assessment methodologies tracking student progress through quantifiable metrics.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div>
+                <h3 class="tl-role">ML Engineer &amp; Jordan Chapter Lead</h3>
+                <div class="tl-company">
+                  <i class="fas fa-building"></i> Omdena
+                  <span class="tl-loc"><i class="fas fa-globe"></i> Remote</span>
+                </div>
+              </div>
+              <span class="tl-date">Feb 2022 – Apr 2024</span>
+            </div>
+            <ul class="tl-list">
+              <li>Engineered emotion detection system using transformer architecture — 20% increase in user satisfaction scores.</li>
+              <li>Enhanced fake news detection accuracy by 15% via BERT-based models with XGBoost ensembling.</li>
+              <li>Led community building for 100+ AI practitioners across the Middle East as Jordan Chapter Lead.</li>
+              <li>Generated technical documentation increasing developer adoption by 20%; drove 30% community engagement growth.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div>
+                <h3 class="tl-role">English Lecturer</h3>
+                <div class="tl-company">
+                  <i class="fas fa-building"></i> Al Hussein Technical University
+                  <span class="tl-loc"><i class="fas fa-map-marker-alt"></i> Amman, Jordan</span>
+                </div>
+              </div>
+              <span class="tl-date">Feb 2018 – May 2024</span>
+            </div>
+            <ul class="tl-list">
+              <li>Designed technology-enhanced language learning curriculum incorporating data analytics to track acquisition progress.</li>
+              <li>Led faculty initiatives reaching 20+ educators to implement innovative teaching methodologies.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">What I've Built</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="proj-card reveal">
+          <div class="proj-top">
+            <div class="proj-icon"><i class="fas fa-robot"></i></div>
+            <span class="proj-badge badge-cyan">Enterprise AI</span>
+          </div>
+          <h3>AI Virtual Employee Platform</h3>
+          <p class="proj-org">HubinIT</p>
+          <p class="proj-desc">Multi-intent conversational system handling 5 core business workflows — financial forecasting, legal compliance, sales analytics, customer service, and ethics monitoring using AWS Lex and Bedrock.</p>
+          <div class="proj-tech">
+            <span>AWS Lex</span><span>Bedrock</span><span>Textract</span><span>DynamoDB</span><span>Kendra</span>
+          </div>
+          <a href="https://github.com/bcopeland64" target="_blank" rel="noopener" class="proj-link">
+            View on GitHub <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="proj-card reveal">
+          <div class="proj-top">
+            <div class="proj-icon"><i class="fas fa-newspaper"></i></div>
+            <span class="proj-badge badge-purple">87% Accuracy</span>
+          </div>
+          <h3>LATAM Fake News Detector</h3>
+          <p class="proj-org">Omdena</p>
+          <p class="proj-desc">Political disinformation detection for Latin America achieving 87% accuracy using BERT-based NLP models with XGBoost ensembling for enhanced classification robustness.</p>
+          <div class="proj-tech">
+            <span>BERT</span><span>XGBoost</span><span>NLP</span><span>Python</span>
+          </div>
+          <a href="https://github.com/bcopeland64" target="_blank" rel="noopener" class="proj-link">
+            View on GitHub <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="proj-card reveal">
+          <div class="proj-top">
+            <div class="proj-icon"><i class="fas fa-microscope"></i></div>
+            <span class="proj-badge badge-green">92% Accuracy</span>
+          </div>
+          <h3>Medical Imaging Cancer Detection</h3>
+          <p class="proj-org">Omdena</p>
+          <p class="proj-desc">CNN-based cancer detection system achieving 92% accuracy while reducing diagnosis time by 30%. Augments radiologist workflows with automated image analysis at clinical scale.</p>
+          <div class="proj-tech">
+            <span>CNN</span><span>PyTorch</span><span>Computer Vision</span><span>Medical AI</span>
+          </div>
+          <a href="https://github.com/bcopeland64" target="_blank" rel="noopener" class="proj-link">
+            View on GitHub <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="proj-card reveal">
+          <div class="proj-top">
+            <div class="proj-icon"><i class="fas fa-comments"></i></div>
+            <span class="proj-badge badge-sky">85% Accuracy</span>
+          </div>
+          <h3>Therapeutic Conversation Agent</h3>
+          <p class="proj-org">Omdena</p>
+          <p class="proj-desc">Mental health chatbot with 85% emotion detection accuracy and multilingual support. Leverages transformer architecture for empathetic, context-aware therapeutic conversations.</p>
+          <div class="proj-tech">
+            <span>Transformers</span><span>NLP</span><span>Multilingual</span><span>Emotion AI</span>
+          </div>
+          <a href="https://github.com/bcopeland64" target="_blank" rel="noopener" class="proj-link">
+            View on GitHub <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="proj-card reveal">
+          <div class="proj-top">
+            <div class="proj-icon"><i class="fas fa-heart-pulse"></i></div>
+            <span class="proj-badge badge-pink">90% Accuracy</span>
+          </div>
+          <h3>Cardiac Prediction System</h3>
+          <p class="proj-org">Omdena</p>
+          <p class="proj-desc">Edge-optimized cardiac prediction platform for wearables reaching 90% accuracy while reducing false positives by 15% — enabling real-time health monitoring at the edge.</p>
+          <div class="proj-tech">
+            <span>Edge ML</span><span>TensorFlow Lite</span><span>Wearables</span><span>Healthcare AI</span>
+          </div>
+          <a href="https://github.com/bcopeland64" target="_blank" rel="noopener" class="proj-link">
+            View on GitHub <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="proj-card reveal">
+          <div class="proj-top">
+            <div class="proj-icon"><i class="fas fa-face-smile"></i></div>
+            <span class="proj-badge badge-orange">+20% Empathy</span>
+          </div>
+          <h3>Emotion Recognition System</h3>
+          <p class="proj-org">Omdena</p>
+          <p class="proj-desc">Human-robot interaction framework improving empathy metrics by 20%. Integrates multimodal emotion recognition for natural and responsive human-robot collaboration.</p>
+          <div class="proj-tech">
+            <span>Computer Vision</span><span>Transformers</span><span>Multimodal</span><span>HRI</span>
+          </div>
+          <a href="https://github.com/bcopeland64" target="_blank" rel="noopener" class="proj-link">
+            View on GitHub <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+      <div class="github-cta">
+        <a href="https://github.com/bcopeland64" target="_blank" rel="noopener" class="btn btn-outline">
+          <i class="fab fa-github"></i> See All Projects on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Academic Background</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="edu-grid">
+
+        <div class="edu-card reveal">
+          <div class="edu-stripe"></div>
+          <div class="edu-icon-wrap"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-body">
+            <span class="edu-degree">BSc Applied Artificial Intelligence</span>
+            <span class="edu-school">International University of Applied Sciences</span>
+            <span class="edu-loc"><i class="fas fa-map-marker-alt"></i> Bad Honnef, Germany</span>
+            <span class="edu-year">Expected Dec 2026</span>
+          </div>
+          <span class="edu-status status-active">In Progress</span>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-stripe"></div>
+          <div class="edu-icon-wrap"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-body">
+            <span class="edu-degree">MSc Computer Science</span>
+            <span class="edu-school">Islamic University of Minnesota</span>
+            <span class="edu-loc"><i class="fas fa-map-marker-alt"></i> Bloomington, Minnesota</span>
+            <span class="edu-year">May 2022</span>
+          </div>
+          <span class="edu-status status-done">Completed</span>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-stripe"></div>
+          <div class="edu-icon-wrap"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-body">
+            <span class="edu-degree">BA Islamic Studies</span>
+            <span class="edu-school">Islamic University of Minnesota</span>
+            <span class="edu-loc"><i class="fas fa-map-marker-alt"></i> Bloomington, Minnesota</span>
+            <span class="edu-year">August 2017</span>
+          </div>
+          <span class="edu-status status-done">Completed</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Let's Connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-sub">Open to new opportunities, collaborations, and conversations about AI.</p>
+      </div>
+      <div class="contact-grid">
+
+        <a href="mailto:bcopeland64@gmail.com" class="contact-card reveal">
+          <div class="contact-icon-wrap ci-cyan"><i class="fas fa-envelope"></i></div>
+          <span class="contact-label">Email</span>
+          <span class="contact-val">bcopeland64@gmail.com</span>
+        </a>
+
+        <a href="https://linkedin.com/in/brandon-copeland64" target="_blank" rel="noopener" class="contact-card reveal">
+          <div class="contact-icon-wrap ci-blue"><i class="fab fa-linkedin-in"></i></div>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-val">brandon-copeland64</span>
+        </a>
+
+        <a href="https://github.com/bcopeland64" target="_blank" rel="noopener" class="contact-card reveal">
+          <div class="contact-icon-wrap ci-purple"><i class="fab fa-github"></i></div>
+          <span class="contact-label">GitHub</span>
+          <span class="contact-val">bcopeland64</span>
+        </a>
+
+        <a href="tel:+962798308323" class="contact-card reveal">
+          <div class="contact-icon-wrap ci-green"><i class="fas fa-phone"></i></div>
+          <span class="contact-label">Phone</span>
+          <span class="contact-val">+962 (0)79 830 8323</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="nav-logo">
+        <span class="bracket">&lt;</span>BSC<span class="bracket">/&gt;</span>
+      </a>
+      <p class="footer-copy">Designed &amp; Built by Brandon S. Copeland</p>
+      <p class="footer-sub">AI Engineer &amp; Machine Learning Specialist</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
